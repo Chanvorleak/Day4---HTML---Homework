@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phan chanvorleak - Accessories online shop</title>
+</head>
+<body>
+
+<h1>Basic Shapes</h1>
+
+<canvas id="shapesCanvas" width="500" height="500" style="border:1px solid #000;"></canvas>
+
+<script>
+    const canvas = document.getElementById('shapesCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // rectangle
+    ctx.fillStyle = '#4CAF50'; 
+    ctx.fillRect(50, 50, 150, 100);
+
+    // circle
+    ctx.beginPath();
+    ctx.arc(300, 100, 50, 0, 2 * Math.PI);
+    ctx.fillStyle = '#FF5733';
+    ctx.fill();
+    ctx.closePath();
+
+    // line
+    ctx.beginPath();
+    ctx.moveTo(100, 200);
+    ctx.lineTo(400, 300);
+    ctx.strokeStyle = '#0000FF'; 
+    ctx.lineWidth = 3;
+    ctx.stroke();
+    ctx.closePath();
+</script>
+
+</body>
+</html>
